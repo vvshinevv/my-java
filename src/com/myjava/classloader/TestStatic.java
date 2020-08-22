@@ -1,6 +1,8 @@
 package com.myjava.classloader;
 
 /**
+ * http://yiyujia.blogspot.com/2011/10/java-class-loader-and-static-variable.html
+ *
  * static 변수 초기화는 클래스 로드 시점에 한번 실행돼서 JVM에 올라간다고 알고 있는데,
  * 만약 ClassLoader가 여러 개라면 각 ClassLoader마다 static 변수를 초기화 한다.
  *
