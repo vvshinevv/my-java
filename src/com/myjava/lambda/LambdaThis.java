@@ -6,15 +6,6 @@ public class LambdaThis {
     }
 
     public void test() {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                check(this);
-            }
-        };
-        runnable.run();
-
-
         Runnable runnableLambda = () -> check(this);
         runnableLambda.run();
     }
