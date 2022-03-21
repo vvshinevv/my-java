@@ -10,5 +10,7 @@ public class CloneTest {
 
         System.out.println(original.getDepartment().getName());
         System.out.println(clone.getDepartment().getName());
+
+
     }
 }
