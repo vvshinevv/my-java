@@ -1,8 +1,8 @@
 package com.myjava.copy;
 
 public class Name {
-    private final int idx;
-    private final String name;
+    private int idx;
+    private String name;
 
     public Name(int idx, String name) {
         this.idx = idx;
