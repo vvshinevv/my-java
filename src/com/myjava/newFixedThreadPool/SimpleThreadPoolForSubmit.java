@@ -1,7 +1,5 @@
 package com.myjava.newFixedThreadPool;
 
-import com.sun.xml.internal.ws.util.CompletedFuture;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -10,10 +8,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.function.BiFunction;
-import java.util.function.Function;
-import java.util.stream.Stream;
 
 public class SimpleThreadPoolForSubmit {
 
@@ -48,7 +42,7 @@ public class SimpleThreadPoolForSubmit {
                         }
                         return "hello " + finalI;
                     }, executor)
-                    .exceptionally(throwable -> "Stranger");
+                    .exceptionally(throwable -> "Stranger"); // 예외처리
 
             multi.add(ind);
         }

@@ -2,6 +2,8 @@ package com.myjava.future;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
 
 public class CoffeeRepository {
 
@@ -17,6 +19,7 @@ public class CoffeeRepository {
     public int getPriceByName(String name) {
         try {
             Thread.sleep(2000);
+            System.out.println(Thread.currentThread().getName());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
