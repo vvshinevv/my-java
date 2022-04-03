@@ -36,6 +36,9 @@ public class CoffeeService implements CoffeeUseCase {
 
     @Override
     public CompletableFuture<Integer> getDiscountPriceAsync(String name) {
-        return null;
+        return CompletableFuture.supplyAsync(() -> {
+
+            return coffeeRepository.getPriceByName(name);
+        }, executor);
     }
 }

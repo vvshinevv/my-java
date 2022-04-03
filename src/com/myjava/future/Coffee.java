@@ -16,4 +16,12 @@ public class Coffee {
     public int getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Coffee{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
