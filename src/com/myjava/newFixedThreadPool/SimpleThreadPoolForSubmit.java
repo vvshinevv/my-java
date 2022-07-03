@@ -15,6 +15,9 @@ public class SimpleThreadPoolForSubmit {
         ExecutorService executor = Executors.newFixedThreadPool(10);
         List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5);
         Future<Integer> future = executor.submit(() -> integers.stream().mapToInt(i -> i).sum());
+        Future<?> submit = executor.submit(() -> System.out.println("Aa"));
+        Object o = submit.get();
+
 
         try {
             Integer result = future.get();
