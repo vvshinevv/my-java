@@ -1,7 +1,7 @@
 package com.myjava.pattern.observer;
 
-public class User implements Subscriber{
-    private String name;
+public class User {
+    private final String name;
 
     public User(String name) {
         this.name = name;
@@ -9,10 +9,5 @@ public class User implements Subscriber{
 
     public String getName() {
         return name;
-    }
-
-    @Override
-    public void handleMessage(String message) {
-        System.out.println(message);
     }
 }
