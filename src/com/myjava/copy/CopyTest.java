@@ -23,10 +23,5 @@ public class CopyTest {
 
         System.out.println(names.size());
         System.out.println(unmodifiableList.size());
-
-
-
-
-
     }
 }
