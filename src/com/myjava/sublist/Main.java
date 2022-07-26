@@ -16,5 +16,7 @@ public class Main {
         System.out.println(integers.size());
         System.out.println(sublist.size());
 
+
+        List<Integer> test = new ArrayList<>(null);
     }
 }
